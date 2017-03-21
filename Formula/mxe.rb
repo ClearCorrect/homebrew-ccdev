@@ -20,19 +20,6 @@ class Mxe < Formula
 	depends_on "scons" => :build
 
   def install
-		system "unset", "CFLAGS"
-		system "unset", "CXXFLAGS"
-		system "unset", "CC"
-		system "unset", "CXX"
-		system "unset", "OBJCXXFLAGS"
-		system "unset", "OBJC"
-		system "unset", "OBJCXX"
-		system "unset", "LDFLAGS"
-		system "unset", "CPPFLAGS"
-		system "unset", "MAKEFLAGS"
-		system "unset", "PKG_CONFIG_LIBDIR"
-		system "unset", "CMAKE_PREFIX_PATH"
-		system "unset", "CMAKE_FRAMEWORK_PATH"
-    system "make", "MXE_TARGETS=x86_64-w64-mingw32.static", "qt5", "QT5_BUILD_TYPE=-debug-and-release"
+		system "env", "-u", "CFLAGS", "-u", "CXXFLAGS", "-u", "CC", "-u", "CXX", "-u", "OBJCXXFLAGS", "-u", "OBJC", "-u", "OBJCXX", "-u", "LDFLAGS", "-u", "CPPFLAGS", "-u", "MAKEFLAGS", "-u", "PKG_CONFIG_LIBDIR", "-u", "CMAKE_PREFIX_PATH", "-u", "CMAKE_FRAMEWORK_PATH", "make", "MXE_TARGETS=x86_64-w64-mingw32.static", "QT5_BUILD_TYPE=-debug-and-release"
   end
 end
