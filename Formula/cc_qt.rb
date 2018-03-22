@@ -102,6 +102,9 @@ class CcQt < Formula
       system "make", "install_docs"
     end
 
+		# symlink qt5
+		("#{prefix}").install_symlink "#{opt_prefix}/qt5"	
+
     # Some config scripts will only find Qt in a "Frameworks" folder
     frameworks.install_symlink Dir["#{lib}/*.framework"]
 
