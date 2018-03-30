@@ -1,4 +1,4 @@
-class CcPacker < Formula
+class Packer < Formula
   desc "Tool for creating identical machine images for multiple platforms"
   homepage "https://packer.io"
   url "https://github.com/hashicorp/packer.git",

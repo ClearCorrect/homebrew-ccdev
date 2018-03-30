@@ -1,4 +1,4 @@
-class CcQuazip < Formula
+class Quazip < Formula
   desc "C++ wrapper over Gilles Vollant's ZIP/UNZIP package"
   homepage "https://quazip.sourceforge.io/"
   url "https://downloads.sourceforge.net/project/quazip/quazip/0.7.3/quazip-0.7.3.tar.gz"

@@ -1,6 +1,6 @@
 require "language/go"
 
-class CcTerraform < Formula
+class Terraform < Formula
   desc "Tool to build, change, and version infrastructure"
   homepage "https://www.terraform.io/"
   url "https://github.com/hashicorp/terraform/archive/v0.11.2.tar.gz"
