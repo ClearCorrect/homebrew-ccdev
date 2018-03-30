@@ -8,6 +8,7 @@ class Terraform < Formula
   head "https://github.com/hashicorp/terraform.git"
 
   bottle do
+		root_url "https://homebrew.bintray.com/bottles"
     cellar :any_skip_relocation
     sha256 "21ad6dd7677f1e55af1c120407729cc8118d06668e8385442c98c5613f8d19c8" => :high_sierra
     sha256 "414826a2532e53ded839290f8068e7c53b2b5468bff7b326721838e3b40251cc" => :sierra
