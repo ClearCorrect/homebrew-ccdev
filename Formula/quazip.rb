@@ -14,7 +14,7 @@ class Quazip < Formula
     sha256 "dc296670c3c7bd52c825bb545132df0731c274af47f44d8ecefc53eda3c2065c" => :yosemite
   end
 
-  depends_on "cc_qt"
+  depends_on "clearcorrect/ccdev/qt"
 
   def install
     system "qmake", "quazip.pro", "-config", "release",
