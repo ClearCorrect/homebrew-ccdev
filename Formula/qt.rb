@@ -11,7 +11,7 @@ class Qt < Formula
 
   bottle do
 		root_url "https://homebrew.bintray.com/bottles"
-    sha256 "d63559b06141047f1d65a431db7aed630461db8d821ed8f925af2ba77ecb0ab4" => :high_sierra
+    sha256 "332ab2f3eb7c13510f460c13d28a562db03297149a3615feb9e3d467fafde56c" => :high_sierra
     sha256 "c3a892407ff379b940b28b6098719bd97a37bc706a0b25485e4d2bfed3f5264d" => :sierra
     sha256 "ac70588d769dfd34c954f9ce9a8f9c3200b57eff84eadcbb96d918bc1bbc1d42" => :el_capitan
   end
