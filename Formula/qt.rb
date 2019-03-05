@@ -22,11 +22,6 @@ class Qt < Formula
   option "with-examples", "Build examples"
   option "without-proprietary-codecs", "Don't build with proprietary codecs (e.g. mp3)"
 
-  # OS X 10.7 Lion is still supported in Qt 5.5, but is no longer a reference
-  # configuration and thus untested in practice. Builds on OS X 10.7 have been
-  # reported to fail: <https://github.com/Homebrew/homebrew/issues/45284>.
-  depends_on :macos => :mountain_lion
-
   depends_on "pkg-config" => :build
   depends_on :xcode => :build
   depends_on "mysql" => :optional
