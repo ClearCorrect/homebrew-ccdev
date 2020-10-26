@@ -1,4 +1,4 @@
-class Draco < Formula
+class DracoAT136 < Formula
   desc "3D geometric mesh and point cloud compression library"
   homepage "https://google.github.io/draco/"
   url "https://github.com/google/draco/archive/1.3.6.tar.gz"
